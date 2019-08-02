@@ -16,7 +16,6 @@
 		B23D33C222F2A86E00E772B8 /* Account+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23D33BE22F2A86E00E772B8 /* Account+CoreDataClass.swift */; };
 		B23D33C422F2A86E00E772B8 /* Transaction+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23D33C022F2A86E00E772B8 /* Transaction+CoreDataClass.swift */; };
 		B23D33C722F2A8A900E772B8 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23D33C622F2A8A900E772B8 /* CoreDataManager.swift */; };
-		B23D33C922F2A96B00E772B8 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23D33C822F2A96B00E772B8 /* Utilities.swift */; };
 		B23D33CB22F2AEDA00E772B8 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23D33CA22F2AEDA00E772B8 /* AccountViewModel.swift */; };
 		B23D33CD22F2B17500E772B8 /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23D33CC22F2B17500E772B8 /* TransactionTableViewCell.swift */; };
 		B23D33CF22F2B46300E772B8 /* CodableCoreData.json in Resources */ = {isa = PBXBuildFile; fileRef = B23D33CE22F2B46300E772B8 /* CodableCoreData.json */; };
@@ -34,7 +33,6 @@
 		B23D33BE22F2A86E00E772B8 /* Account+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataClass.swift"; sourceTree = "<group>"; };
 		B23D33C022F2A86E00E772B8 /* Transaction+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Transaction+CoreDataClass.swift"; sourceTree = "<group>"; };
 		B23D33C622F2A8A900E772B8 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
-		B23D33C822F2A96B00E772B8 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		B23D33CA22F2AEDA00E772B8 /* AccountViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		B23D33CC22F2B17500E772B8 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
 		B23D33CE22F2B46300E772B8 /* CodableCoreData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CodableCoreData.json; sourceTree = "<group>"; };
@@ -55,7 +53,6 @@
 			isa = PBXGroup;
 			children = (
 				B23D33C622F2A8A900E772B8 /* CoreDataManager.swift */,
-				B23D33C822F2A96B00E772B8 /* Utilities.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -213,7 +210,6 @@
 				B23D33CB22F2AEDA00E772B8 /* AccountViewModel.swift in Sources */,
 				B23D33B222F2684600E772B8 /* CodableCoreData.xcdatamodeld in Sources */,
 				B23D33C422F2A86E00E772B8 /* Transaction+CoreDataClass.swift in Sources */,
-				B23D33C922F2A96B00E772B8 /* Utilities.swift in Sources */,
 				B23D33CD22F2B17500E772B8 /* TransactionTableViewCell.swift in Sources */,
 				B23D33C722F2A8A900E772B8 /* CoreDataManager.swift in Sources */,
 				B23D33C222F2A86E00E772B8 /* Account+CoreDataClass.swift in Sources */,

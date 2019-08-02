@@ -11,6 +11,12 @@ import CoreData
 
 public typealias CodableManagedObject = NSManagedObject & Codable
 
+public enum CoreDataError: Error {
+    case dataFetchFailed
+    case invalidRequest
+    case noData
+}
+
 final class CoreDataManager {
 
     static let shared = CoreDataManager()
