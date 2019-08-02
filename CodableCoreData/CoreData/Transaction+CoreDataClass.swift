@@ -24,7 +24,6 @@ public class Transaction: CodableCoreData {
     @NSManaged public var location: String?
     @NSManaged public var account: Account?
     
-    
     public required init(from decoder: Decoder) throws {
         guard let contextUserInfoKey = CodingUserInfoKey.context,
             let managedObjectContext = decoder.userInfo[contextUserInfoKey] as? NSManagedObjectContext,

@@ -52,8 +52,7 @@ public class Account: CodableCoreData {
     }
 }
 
-// MARK: Generated accessors for accounts
-// MARK: Generated accessors for transactions
+// MARK: Generated accessors for Account
 extension Account {
     
     @objc(addTransactionsObject:)
