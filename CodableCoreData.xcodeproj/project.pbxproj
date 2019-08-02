@@ -363,7 +363,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JZ3CTK9Q65;
+				DEVELOPMENT_TEAM = 2HZ6W34H59;
 				INFOPLIST_FILE = CodableCoreData/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -381,7 +381,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JZ3CTK9Q65;
+				DEVELOPMENT_TEAM = 2HZ6W34H59;
 				INFOPLIST_FILE = CodableCoreData/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

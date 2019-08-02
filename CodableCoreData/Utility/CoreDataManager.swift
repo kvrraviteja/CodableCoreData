@@ -9,7 +9,7 @@
 import Foundation
 import CoreData
 
-public typealias CodableCoreData = NSManagedObject & Codable
+public typealias CodableManagedObject = NSManagedObject & Codable
 
 final class CoreDataManager {
 
@@ -62,7 +62,7 @@ final class CoreDataManager {
 }
 
 extension CoreDataManager {
-    public func persist<T: CodableCoreData>(_ json: [String: Any],
+    public func persist<T: CodableManagedObject>(_ json: [String: Any],
                                           success: (T) -> Void,
                                           failure: (Error) -> Void) {
         let decoder = JSONDecoder()
@@ -80,7 +80,7 @@ extension CoreDataManager {
 }
 
 extension NSManagedObjectContext {
-    func fetch<T: CodableCoreData>(_ entity: NSEntityDescription,
+    func fetch<T: CodableManagedObject>(_ entity: NSEntityDescription,
                                    predicate: NSPredicate? = nil,
                                    sort: [NSSortDescriptor]? = nil,
                                    success: ([T]) -> Void,
@@ -105,7 +105,7 @@ extension NSManagedObjectContext {
         }
     }
     
-    func insert<T: CodableCoreData>(_ entity: NSEntityDescription,
+    func insert<T: CodableManagedObject>(_ entity: NSEntityDescription,
                                     predicate: NSPredicate?,
                                     success: ([T]) -> Void,
                                     failure: (Error) -> Void)  {
@@ -125,7 +125,7 @@ extension NSManagedObjectContext {
         }, failure: failure)
     }
     
-    private func insert<T: CodableCoreData>(_ entity: NSEntityDescription,
+    private func insert<T: CodableManagedObject>(_ entity: NSEntityDescription,
                                             success: ([T]) -> Void,
                                             failure: (Error) -> Void)  {
         guard let name = entity.name,
@@ -137,7 +137,7 @@ extension NSManagedObjectContext {
     }
 
     //Delte records of the entity with the given map / condition.
-    func delete<T: CodableCoreData>(of type: T.Type,
+    func delete<T: CodableManagedObject>(of type: T.Type,
                                     predicate: NSPredicate?,
                                     callBack: (Error) -> ()) {
         
@@ -156,7 +156,7 @@ extension NSManagedObjectContext {
     }
     
     //Use this method wisely. This could potentially delete all the records of a Entity.
-    func batchDelete<T: CodableCoreData>(of type: T.Type,
+    func batchDelete<T: CodableManagedObject>(of type: T.Type,
                                           predicate: NSPredicate?,
                                           callBack: (Error) -> ()) {
         let fetchRequest = T.fetchRequest()
@@ -189,7 +189,7 @@ extension NSManagedObjectContext {
         }
     }
     
-    func fetch<T: CodableCoreData>(_ entity : NSEntityDescription?,
+    func fetch<T: CodableManagedObject>(_ entity : NSEntityDescription?,
                properties: [Any]?,
                predicate : NSPredicate?,
                sortBy : [NSSortDescriptor]?,

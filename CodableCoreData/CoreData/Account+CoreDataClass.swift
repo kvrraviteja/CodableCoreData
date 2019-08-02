@@ -11,7 +11,7 @@ import Foundation
 import CoreData
 
 @objc(Account)
-public class Account: CodableCoreData {
+public class Account: CodableManagedObject {
     enum CodingKeys: String, CodingKey {
         case name = "name"
         case uId = "uId"
