@@ -76,7 +76,7 @@ extension CoreDataManager {
         do {
             let data = try JSONSerialization.data(withJSONObject: json, options: .prettyPrinted)
             let savedObject = try decoder.decode(T.self, from: data)
-            let _ = self.saveViewContext()
+            self.saveViewContext()
             success(savedObject)
         } catch {
             print("Failed to save objects \(error)")
