@@ -13,6 +13,13 @@
 		B23D33B222F2684600E772B8 /* CodableCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B23D33B022F2684600E772B8 /* CodableCoreData.xcdatamodeld */; };
 		B23D33B422F2684700E772B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B23D33B322F2684700E772B8 /* Assets.xcassets */; };
 		B23D33B722F2684700E772B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B23D33B522F2684700E772B8 /* LaunchScreen.storyboard */; };
+		B23D33C222F2A86E00E772B8 /* Account+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23D33BE22F2A86E00E772B8 /* Account+CoreDataClass.swift */; };
+		B23D33C422F2A86E00E772B8 /* Transaction+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23D33C022F2A86E00E772B8 /* Transaction+CoreDataClass.swift */; };
+		B23D33C722F2A8A900E772B8 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23D33C622F2A8A900E772B8 /* CoreDataManager.swift */; };
+		B23D33C922F2A96B00E772B8 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23D33C822F2A96B00E772B8 /* Utilities.swift */; };
+		B23D33CB22F2AEDA00E772B8 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23D33CA22F2AEDA00E772B8 /* AccountViewModel.swift */; };
+		B23D33CD22F2B17500E772B8 /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23D33CC22F2B17500E772B8 /* TransactionTableViewCell.swift */; };
+		B23D33CF22F2B46300E772B8 /* CodableCoreData.json in Resources */ = {isa = PBXBuildFile; fileRef = B23D33CE22F2B46300E772B8 /* CodableCoreData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		B23D33B322F2684700E772B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B23D33B622F2684700E772B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B23D33B822F2684700E772B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B23D33BE22F2A86E00E772B8 /* Account+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B23D33C022F2A86E00E772B8 /* Transaction+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Transaction+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B23D33C622F2A8A900E772B8 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		B23D33C822F2A96B00E772B8 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		B23D33CA22F2AEDA00E772B8 /* AccountViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		B23D33CC22F2B17500E772B8 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
+		B23D33CE22F2B46300E772B8 /* CodableCoreData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CodableCoreData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +51,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B23C14B722F3BA4A00560EC3 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				B23D33C622F2A8A900E772B8 /* CoreDataManager.swift */,
+				B23D33C822F2A96B00E772B8 /* Utilities.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		B23C14B822F3BAAF00560EC3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B23D33CC22F2B17500E772B8 /* TransactionTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B23C14B922F3BB1F00560EC3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B23D33CA22F2AEDA00E772B8 /* AccountViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B23C14BA22F3BB2F00560EC3 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B23D33AB22F2684600E772B8 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B23C14BB22F3BB5000560EC3 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				B23D33CE22F2B46300E772B8 /* CodableCoreData.json */,
+				B23D33AD22F2684600E772B8 /* Main.storyboard */,
+				B23D33B322F2684700E772B8 /* Assets.xcassets */,
+				B23D33B522F2684700E772B8 /* LaunchScreen.storyboard */,
+				B23D33B022F2684600E772B8 /* CodableCoreData.xcdatamodeld */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		B23C14BC22F3BB7700560EC3 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				B23D33BE22F2A86E00E772B8 /* Account+CoreDataClass.swift */,
+				B23D33C022F2A86E00E772B8 /* Transaction+CoreDataClass.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		B23D339D22F2684600E772B8 = {
 			isa = PBXGroup;
 			children = (
@@ -57,12 +125,13 @@
 			isa = PBXGroup;
 			children = (
 				B23D33A922F2684600E772B8 /* AppDelegate.swift */,
-				B23D33AB22F2684600E772B8 /* ViewController.swift */,
-				B23D33AD22F2684600E772B8 /* Main.storyboard */,
-				B23D33B322F2684700E772B8 /* Assets.xcassets */,
-				B23D33B522F2684700E772B8 /* LaunchScreen.storyboard */,
+				B23C14BA22F3BB2F00560EC3 /* ViewController */,
+				B23C14B922F3BB1F00560EC3 /* ViewModel */,
+				B23C14B822F3BAAF00560EC3 /* View */,
+				B23C14BC22F3BB7700560EC3 /* CoreData */,
+				B23C14B722F3BA4A00560EC3 /* Utility */,
+				B23C14BB22F3BB5000560EC3 /* Resource */,
 				B23D33B822F2684700E772B8 /* Info.plist */,
-				B23D33B022F2684600E772B8 /* CodableCoreData.xcdatamodeld */,
 			);
 			path = CodableCoreData;
 			sourceTree = "<group>";
@@ -126,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B23D33B722F2684700E772B8 /* LaunchScreen.storyboard in Resources */,
+				B23D33CF22F2B46300E772B8 /* CodableCoreData.json in Resources */,
 				B23D33B422F2684700E772B8 /* Assets.xcassets in Resources */,
 				B23D33AF22F2684600E772B8 /* Main.storyboard in Resources */,
 			);
@@ -140,7 +210,13 @@
 			files = (
 				B23D33AC22F2684600E772B8 /* ViewController.swift in Sources */,
 				B23D33AA22F2684600E772B8 /* AppDelegate.swift in Sources */,
+				B23D33CB22F2AEDA00E772B8 /* AccountViewModel.swift in Sources */,
 				B23D33B222F2684600E772B8 /* CodableCoreData.xcdatamodeld in Sources */,
+				B23D33C422F2A86E00E772B8 /* Transaction+CoreDataClass.swift in Sources */,
+				B23D33C922F2A96B00E772B8 /* Utilities.swift in Sources */,
+				B23D33CD22F2B17500E772B8 /* TransactionTableViewCell.swift in Sources */,
+				B23D33C722F2A8A900E772B8 /* CoreDataManager.swift in Sources */,
+				B23D33C222F2A86E00E772B8 /* Account+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +363,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2HZ6W34H59;
+				DEVELOPMENT_TEAM = JZ3CTK9Q65;
 				INFOPLIST_FILE = CodableCoreData/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -305,7 +381,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2HZ6W34H59;
+				DEVELOPMENT_TEAM = JZ3CTK9Q65;
 				INFOPLIST_FILE = CodableCoreData/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

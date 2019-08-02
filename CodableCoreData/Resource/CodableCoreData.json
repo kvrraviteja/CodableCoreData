@@ -1,0 +1,18 @@
+{
+	"account": {
+		"uId": "ABCD",
+		"name": "Ravi Checking",
+		"mask": "3434"
+	},
+	"transactions": [{
+			"uId": "1234",
+			"name": "Peet's coffee",
+			"location": "Fremont"
+		},
+		{
+			"uId": "4545",
+			"name": "Apple",
+			"location": "Online"
+		}
+	]
+}
