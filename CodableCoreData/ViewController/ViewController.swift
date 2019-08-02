@@ -90,7 +90,7 @@ extension ViewController {
                     }
                 }
             } catch {
-                print("Failed to read file \(error)")
+                print("Failed to serialize json \(error)")
             }
         }
     }
